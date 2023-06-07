@@ -5,7 +5,7 @@ import { getRandomGreeting } from "../Redux/Greeting/greetingReducer";
 const Greeting = () => {
     const dispatch = useDispatch();
     const { greeting, error } = useSelector((state) => state.greetings);
-    
+
     useEffect(() => {
         dispatch(getRandomGreeting());
     }, [dispatch]);

@@ -9,6 +9,7 @@ AllCops:
     - "node_modules/**/*"
 
   DisplayCopNames: true
+  TargetRubyVersion: 3.2.2
 
 Layout/LineLength:
   Max: 120
