@@ -25,7 +25,7 @@ const initialState = {
 export function getRandomGreeting() {
   return async function(dispatch) {
     try {
-      const response = await axios.get('/api');
+      const response = await axios.get('/api/v1');
       dispatch(getRandomGreetingSuccess(response.data.message));
     } catch (error) {
       dispatch(getRandomGreetingFailure(error));
