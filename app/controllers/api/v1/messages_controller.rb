@@ -4,6 +4,8 @@ class Api::V1::MessagesController < ApplicationController
 
     random_message = Message.order('RANDOM()').first
 
+
+
     render json: { message: random_message.text }
 
   end
